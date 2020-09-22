@@ -22,12 +22,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 .li-modal{
   padding: 10px 0px 10px 5px;
     border-bottom: 1px solid #ddd;
-    cursor: pointer;
 }
 
 .ul-modal a {
@@ -69,22 +67,10 @@
   border-radius: 50%;
   vertical-align: middle;
 }
-.img-chat-person{
-  width: 30px !important;
-  height: 30px !important;
-  border-radius: 50%;
-  vertical-align: middle;
-}
+
 .span-home {
   vertical-align: middle;
   padding: 0px 15px;
-  font-size: 13px;
-}
-
-.span-list{
-  vertical-align: middle;
-  padding: 0px 15px;
-  font-size: 13px;
 }
 
 .user-header-home {
@@ -356,15 +342,6 @@
     width: 6cm;
 }
 
-.chat-person-container{
-  display: flex;
-    flex-flow: column;
-    position: fixed;
-    bottom: 0;
-    right: 22%;
-    width: 6cm;
-}
-
 .chat-list{
   display: flex;
   background-color: #2C65C8;
@@ -382,7 +359,7 @@
     background-color: white;
     border: 1px solid #2C65C8;
     flex: 1;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 .chat-list img {
