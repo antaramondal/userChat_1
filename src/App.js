@@ -1,14 +1,8 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, {  useEffect, useReducer } from "react";
 import "./App.css";
 import axios from "axios";
-import { Link, BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Profile from "./components/profile/Profile";
+import {  BrowserRouter, Route, Redirect } from "react-router-dom";
 import Home from "./components/home/Home";
-import SideNav from "./components/sideNav/SideNav";
-import PostDetails from "./components/postDetails/PostDetails";
-import Gallery from "./components/gallery/Gallery";
-import ToDo from "./components/todo/ToDo";
-import ChatList from "./components/chatbox/ChatList";
 import DashBoard from "./components/dashboard/DashBoard";
 
 export const UserContext = React.createContext();

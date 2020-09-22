@@ -1,4 +1,4 @@
-import React, { useContext, useState,useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { UserContext } from "../../App";
 import {Link} from 'react-router-dom';
 import { HandlerContext } from "../dashboard/DashBoard";
@@ -20,14 +20,12 @@ function Header(props) {
     e.preventDefault();
     setShowModal(!showModal);
   };
-  const modalOnclick = (e) => {
-    e.preventDefault();
-  };
+  
   return (
     <div className="main-header-div">
       <span className="header-name-span">{props.headerName}</span>
       <span onClick={showModalHandler} className="main-span-header">
-        <img
+        <img alt=""
           className="img-header"
           src={userContext.usestate.user.profilepicture}
         />
@@ -39,7 +37,7 @@ function Header(props) {
           <div className="modal-main-div">
             <div className="modal-user-div">
               <span className="span-img-modal">
-              <img
+              <img alt=""
                 className="img-modal"
                 src={userContext.usestate.user.profilepicture}
               />
@@ -57,7 +55,7 @@ function Header(props) {
                 }
                 }
               >
-                <img className="img-home" src={user.profilepicture} />
+                <img alt="" className="img-home" src={user.profilepicture} />
                 <span className="span-home">{user.name}</span>
               </li>
             </Link>)}

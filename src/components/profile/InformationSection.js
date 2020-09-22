@@ -8,7 +8,7 @@ function InformationSection() {
     <div className="info-main-div">
       <div className="personal-info-div">
         <span className="span-img-info-profile">
-        <img
+        <img alt=""
           className="img-info-profile"
           src={userContext.usestate.user.profilepicture}
         />

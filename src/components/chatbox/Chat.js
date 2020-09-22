@@ -10,10 +10,10 @@ function Chat(props) {
     return (
         <div className="chat-person-container" style={{height: openChat ? '6cm' : ''}}>
             <div className="chat-list" >
-                <img className="img-chat-person" src={props.person.profilepicture}/>
+                <img className="img-chat-person" src={props.person.profilepicture} alt=""/>
                 <span>{props.person.name}</span>
-                <img src={DropDown} style={{ transform: openChat && 'rotate(180deg)'}} onClick={() => {setOpenChat(!openChat)}}/>
-                <img src={Cross} onClick={() => {props.removeChat()}} />
+                <img alt="" src={DropDown} style={{ transform: openChat && 'rotate(180deg)'}} onClick={() => {setOpenChat(!openChat)}}/>
+                <img alt="" src={Cross} onClick={() => {props.removeChat()}} />
             </div>
             {
                 <div className="chat-body" style={{display: openChat ? 'flex' : 'none'}}>

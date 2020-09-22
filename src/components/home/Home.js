@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../../App";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ function Home() {
                     })
                   }
                 >
-                  <img className="img-home" src={user.profilepicture} />
+                  <img alt="" className="img-home" src={user.profilepicture} />
                   <span className="span-home">{user.name}</span>
                 </li>
               </Link>

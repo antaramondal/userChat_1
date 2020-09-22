@@ -50,7 +50,6 @@ function DashBoard() {
   const [showChat,setShowChat]=useState(false);
 
   useEffect(() => {
-    console.log('kksadsakasdsakdsadksa',chat);
     return () => {
       userContext.usedispatch({ type: "signOutUser" });
     };

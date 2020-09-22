@@ -9,9 +9,9 @@ function ChatList(props) {
     return (
         <div className="chat-container" style={{ height: openChat ? '9cm' : ''}}>
             <div className="chat-list" onClick={() => {setOpenChat(!openChat)}}>
-                <img  src={Chaticon}/>
+                <img alt="" src={Chaticon}/>
                 <span>{props.heading}</span>
-                <img src={DropDown} style={{ transform: openChat && 'rotate(180deg)'}}/>
+                <img alt="" src={DropDown} style={{ transform: openChat && 'rotate(180deg)'}}/>
             </div>
             {
                 <div className="chat-body" style={{display: openChat ? 'flex' : 'none'}}>
